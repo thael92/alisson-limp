@@ -265,6 +265,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(139, 255, 255, 0.3);
     transition: all 0.3s ease;
+   
 }
 
 .swiper-button-next:hover,
@@ -277,6 +278,7 @@ body {
 .swiper-button-prev:after {
     font-size: 22px;
     font-weight: bold;
+    color: #8c8c8c;
 }
 
 .swiper-pagination-bullet {
@@ -626,5 +628,56 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Add these styles for the Instagram icon and link */
+.contact-info .fa-instagram {
+    background: linear-gradient(45deg, #C13584, #c4ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .info-item:hover .fa-instagram {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.contact-info a {
+    color: #8c8c8c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #C13584;
+}
+
+/* Styles for WhatsApp icon and link */
+.contact-info .fa-whatsapp {
+    background: linear-gradient(45deg, #25D366, #c4ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .info-item:hover .fa-whatsapp {
+    transform: scale(1.2) rotate(15deg);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.2);
     }
 }
